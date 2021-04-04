@@ -15,102 +15,75 @@ var timeBlock9 = "17:00";
 var timeBlock10 = "18:00";
 // Sets the time for 9am timeblock
 if (currentTime <= timeBlock1) {
-    console.log("currentTime < timeBlock1")
-    document.getElementById("myText09").setAttribute("class", "col-sm-10 future");
+    $("#myText09").addClass("col-sm-10 future");
 } else if (currentTime <= timeBlock2) {
-    console.log("currentTime < timeBlock2")
-    document.getElementById("myText09").setAttribute("class", "col-sm-10 present");
+    $("#myText09").addClass("col-sm-10 present");
 } else {
-    console.log("currentTime > timeBlock2")
-    document.getElementById("myText09").setAttribute("class", "col-sm-10 past");
+    $("#myText09").addClass("col-sm-10 past");
 }
 // Sets the time for 10am timeblock
 if (currentTime <= timeBlock2) {
-    console.log("currentTime < timeBlock2")
-    document.getElementById("myText10").setAttribute("class", "col-sm-10 future");
+    $("#myText10").addClass("col-sm-10 future");
 } else if (currentTime <= timeBlock3) {
-    console.log("currentTime < timeBlock3")
-    document.getElementById("myText10").setAttribute("class", "col-sm-10 present");
+    $("#myText10").addClass("col-sm-10 present");
 } else {
-    console.log("currentTime > timeBlock3")
-    document.getElementById("myText10").setAttribute("class", "col-sm-10 past");
+    $("#myText10").addClass("col-sm-10 past");
 }
 // Sets the time for 11am timeblock
 if (currentTime <= timeBlock3) {
-    console.log("currentTime < timeBlock3")
-    document.getElementById("myText11").setAttribute("class", "col-sm-10 future");
+    $("#myText11").addClass("col-sm-10 future");
 } else if (currentTime <= timeBlock4) {
-    console.log("currentTime < timeBlock4")
-    document.getElementById("myText11").setAttribute("class", "col-sm-10 present");
+    $("#myText11").addClass("col-sm-10 present");
 } else {
-    console.log("currentTime > timeBlock4")
-    document.getElementById("myText11").setAttribute("class", "col-sm-10 past");
+    $("#myText11").addClass("col-sm-10 past");
 }
 // Sets the time for 12pm timeblock
 if (currentTime <= timeBlock4) {
-    console.log("currentTime < timeBlock4")
-    document.getElementById("myText12").setAttribute("class", "col-sm-10 future");
+    $("#myText12").addClass("col-sm-10 future");
 } else if (currentTime <= timeBlock5) {
-    console.log("currentTime < timeBlock5")
-    document.getElementById("myText12").setAttribute("class", "col-sm-10 present");
+    $("#myText12").addClass("col-sm-10 present");
 } else {
-    console.log("currentTime > timeBlock5")
-    document.getElementById("myText12").setAttribute("class", "col-sm-10 past");
+    $("#myText12").addClass("col-sm-10 past");
 }
 // Sets the time for 1pm timeblock
 if (currentTime <= timeBlock5) {
-    console.log("currentTime < timeBlock5")
-    document.getElementById("myText13").setAttribute("class", "col-sm-10 future");
+    $("#myText13").addClass("col-sm-10 future");
 } else if (currentTime <= timeBlock6) {
-    console.log("currentTime < timeBlock6")
-    document.getElementById("myText13").setAttribute("class", "col-sm-10 present");
+    $("#myText13").addClass("col-sm-10 present");
 } else {
-    console.log("currentTime > timeBlock6")
-    document.getElementById("myText13").setAttribute("class", "col-sm-10 past");
+    $("#myText13").addClass("col-sm-10 past");
 }
 // Sets the time for 2pm timeblock
 if (currentTime <= timeBlock6) {
-    console.log("currentTime < timeBlock6")
-    document.getElementById("myText14").setAttribute("class", "col-sm-10 future");
+    $("#myText14").addClass("col-sm-10 future");
 } else if (currentTime <= timeBlock7) {
-    console.log("currentTime < timeBlock7")
-    document.getElementById("myText14").setAttribute("class", "col-sm-10 present");
+    $("#myText14").addClass("col-sm-10 present");
 } else {
-    console.log("currentTime > timeBlock7")
-    document.getElementById("myText14").setAttribute("class", "col-sm-10 past");
+    $("#myText14").addClass("col-sm-10 past");
 }
 // Sets the time for 3pm timeblock
 if (currentTime <= timeBlock7) {
-    console.log("currentTime < timeBlock7")
-    document.getElementById("myText15").setAttribute("class", "col-sm-10 future");
+    $("#myText15").addClass("col-sm-10 future");
 } else if (currentTime <= timeBlock8) {
-    console.log("currentTime < timeBlock8")
-    document.getElementById("myText15").setAttribute("class", "col-sm-10 present");
+    $("#myText15").addClass("col-sm-10 present");
 } else {
-    console.log("currentTime > timeBlock8")
-    document.getElementById("myText15").setAttribute("class", "col-sm-10 past");
+    $("#myText15").addClass("col-sm-10 past");
 }
 // Sets the time for 4pm timeblock
 if (currentTime <= timeBlock8) {
-    console.log("currentTime < timeBlock8")
-    document.getElementById("myText16").setAttribute("class", "col-sm-10 future");
+    $("#myText16").addClass("col-sm-10 future");
 } else if (currentTime <= timeBlock9) {
-    console.log("currentTime < timeBlock9")
-    document.getElementById("myText16").setAttribute("class", "col-sm-10 present");
+    $("#myText16").addClass("col-sm-10 present");
 } else {
-    console.log("currentTime > timeBlock9")
-    document.getElementById("myText16").setAttribute("class", "col-sm-10 past");
+    $("#myText16").addClass("col-sm-10 past");
 }
 // Sets the time for 5pm timeblock
 if (currentTime <= timeBlock9) {
-    console.log("currentTime < timeBlock9")
-    document.getElementById("myText17").setAttribute("class", "col-sm-10 future");
+    $("#myText17").addClass("col-sm-10 future");
 } else if (currentTime <= timeBlock10) {
-    console.log("currentTime < timeBlock10")
-    document.getElementById("myText17").setAttribute("class", "col-sm-10 present");
+    $("#myText17").addClass("col-sm-10 present");
 } else {
-    console.log("currentTime > timeBlock10")
-    document.getElementById("myText17").setAttribute("class", "col-sm-10 past");
+    $("#myText17").addClass("col-sm-10 past");
 }
 
 //--------------------------------------------------------
