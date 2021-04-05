@@ -1,197 +1,50 @@
-//Add current date & time at the top of the planner 
-var currentDate = moment().format('dddd Do MMMM, ');
-var currentTime = moment().format('HH:mm');
-$('#currentDay').text(currentDate + currentTime);
-//--------------------------------------------------------
-var timeBlock1 = "09:00";
-var timeBlock2 = "10:00";
-var timeBlock3 = "11:00";
-var timeBlock4 = "12:00";
-var timeBlock5 = "13:00";
-var timeBlock6 = "14:00";
-var timeBlock7 = "15:00";
-var timeBlock8 = "16:00";
-var timeBlock9 = "17:00";
-var timeBlock10 = "18:00";
-// Sets the time for 9am timeblock
-if (currentTime <= timeBlock1) {
-    $("#myText09").addClass("col-sm-10 future");
-} else if (currentTime <= timeBlock2) {
-    $("#myText09").addClass("col-sm-10 present");
-} else {
-    $("#myText09").addClass("col-sm-10 past");
-}
-// Sets the time for 10am timeblock
-if (currentTime <= timeBlock2) {
-    $("#myText10").addClass("col-sm-10 future");
-} else if (currentTime <= timeBlock3) {
-    $("#myText10").addClass("col-sm-10 present");
-} else {
-    $("#myText10").addClass("col-sm-10 past");
-}
-// Sets the time for 11am timeblock
-if (currentTime <= timeBlock3) {
-    $("#myText11").addClass("col-sm-10 future");
-} else if (currentTime <= timeBlock4) {
-    $("#myText11").addClass("col-sm-10 present");
-} else {
-    $("#myText11").addClass("col-sm-10 past");
-}
-// Sets the time for 12pm timeblock
-if (currentTime <= timeBlock4) {
-    $("#myText12").addClass("col-sm-10 future");
-} else if (currentTime <= timeBlock5) {
-    $("#myText12").addClass("col-sm-10 present");
-} else {
-    $("#myText12").addClass("col-sm-10 past");
-}
-// Sets the time for 1pm timeblock
-if (currentTime <= timeBlock5) {
-    $("#myText13").addClass("col-sm-10 future");
-} else if (currentTime <= timeBlock6) {
-    $("#myText13").addClass("col-sm-10 present");
-} else {
-    $("#myText13").addClass("col-sm-10 past");
-}
-// Sets the time for 2pm timeblock
-if (currentTime <= timeBlock6) {
-    $("#myText14").addClass("col-sm-10 future");
-} else if (currentTime <= timeBlock7) {
-    $("#myText14").addClass("col-sm-10 present");
-} else {
-    $("#myText14").addClass("col-sm-10 past");
-}
-// Sets the time for 3pm timeblock
-if (currentTime <= timeBlock7) {
-    $("#myText15").addClass("col-sm-10 future");
-} else if (currentTime <= timeBlock8) {
-    $("#myText15").addClass("col-sm-10 present");
-} else {
-    $("#myText15").addClass("col-sm-10 past");
-}
-// Sets the time for 4pm timeblock
-if (currentTime <= timeBlock8) {
-    $("#myText16").addClass("col-sm-10 future");
-} else if (currentTime <= timeBlock9) {
-    $("#myText16").addClass("col-sm-10 present");
-} else {
-    $("#myText16").addClass("col-sm-10 past");
-}
-// Sets the time for 5pm timeblock
-if (currentTime <= timeBlock9) {
-    $("#myText17").addClass("col-sm-10 future");
-} else if (currentTime <= timeBlock10) {
-    $("#myText17").addClass("col-sm-10 present");
-} else {
-    $("#myText17").addClass("col-sm-10 past");
-}
-
-//--------------------------------------------------------
-// Assign VALUES and alloocate to SCHEDULE array
-var timeBlockText1 = " "; var timeBlockText2 = " "; var timeBlockText3 = " "; var timeBlockText4 = " "; var timeBlockText5 = " "; var timeBlockText6 = " "; var timeBlockText7 = " "; var timeBlockText8 = " "; var timeBlockText9 = " ";
-var schedule = { key1: timeBlockText1, key2: timeBlockText2, key3: timeBlockText3, key4: timeBlockText4, key5: timeBlockText5, key6: timeBlockText6, key7: timeBlockText7, key8: timeBlockText8, key9: timeBlockText9 };
-// getItems using individual schedule keys
-timeBlockText1 = JSON.parse(localStorage.getItem("key1"));
-timeBlockText2 = JSON.parse(localStorage.getItem("key2"));
-timeBlockText3 = JSON.parse(localStorage.getItem("key3"));
-timeBlockText4 = JSON.parse(localStorage.getItem("key4"));
-timeBlockText5 = JSON.parse(localStorage.getItem("key5"));
-timeBlockText6 = JSON.parse(localStorage.getItem("key6"));
-timeBlockText7 = JSON.parse(localStorage.getItem("key7"));
-timeBlockText8 = JSON.parse(localStorage.getItem("key8"));
-timeBlockText9 = JSON.parse(localStorage.getItem("key9"));
-// display values in work day schedule
-document.getElementById("myText09").innerHTML = timeBlockText1;
-document.getElementById("myText10").innerHTML = timeBlockText2;
-document.getElementById("myText11").innerHTML = timeBlockText3;
-document.getElementById("myText12").innerHTML = timeBlockText4;
-document.getElementById("myText13").innerHTML = timeBlockText5;
-document.getElementById("myText14").innerHTML = timeBlockText6;
-document.getElementById("myText15").innerHTML = timeBlockText7;
-document.getElementById("myText16").innerHTML = timeBlockText8;
-document.getElementById("myText17").innerHTML = timeBlockText9;
-//--------------------------------------------------------
-function myFunction09() {
-    var data9 = document.getElementById("myText09").value;
-    document.getElementById("myText09").innerHTML = data9;
-    localStorage.setItem("key1", JSON.stringify(data9));
-}
-function myFunction10() {
-    var data10 = document.getElementById("myText10").value;
-    document.getElementById("myText10").innerHTML = data10;
-    localStorage.setItem("key2", JSON.stringify(data10));
-}
-function myFunction11() {
-    var data11 = document.getElementById("myText11").value;
-    document.getElementById("myText11").innerHTML = data11;
-    localStorage.setItem("key3", JSON.stringify(data11));
-}
-function myFunction12() {
-    var data12 = document.getElementById("myText12").value;
-    document.getElementById("myText12").innerHTML = data12;
-    localStorage.setItem("key4", JSON.stringify(data12));
-}
-function myFunction13() {
-    var data13 = document.getElementById("myText13").value;
-    document.getElementById("myText13").innerHTML = data13;
-    localStorage.setItem("key5", JSON.stringify(data13));
-}
-function myFunction14() {
-    var data14 = document.getElementById("myText14").value;
-    document.getElementById("myText14").innerHTML = data14;
-    localStorage.setItem("key6", JSON.stringify(data14));
-}
-function myFunction15() {
-    var data15 = document.getElementById("myText15").value;
-    document.getElementById("myText15").innerHTML = data15;
-    localStorage.setItem("key7", JSON.stringify(data15));
-}
-function myFunction16() {
-    var data16 = document.getElementById("myText16").value;
-    document.getElementById("myText16").innerHTML = data16;
-    localStorage.setItem("key8", JSON.stringify(data16));
-}
-function myFunction17() {
-    var data17 = document.getElementById("myText17").value;
-    document.getElementById("myText17").innerHTML = data17;
-    localStorage.setItem("key9", JSON.stringify(data17));
-}
-//--------------------------------------------------------
-// Event listener to move to index page
-saveBtn09.addEventListener("click", function (event) {
-    event.preventDefault();
-    myFunction09();
-});
-saveBtn10.addEventListener("click", function (event) {
-    event.preventDefault();
-    myFunction10();
-});
-saveBtn11.addEventListener("click", function (event) {
-    event.preventDefault();
-    myFunction11();
-});
-saveBtn12.addEventListener("click", function (event) {
-    event.preventDefault();
-    myFunction12();
-});
-saveBtn13.addEventListener("click", function (event) {
-    event.preventDefault();
-    myFunction13();
-});
-saveBtn14.addEventListener("click", function (event) {
-    event.preventDefault();
-    myFunction14();
-});
-saveBtn15.addEventListener("click", function (event) {
-    event.preventDefault();
-    myFunction15();
-});
-saveBtn16.addEventListener("click", function (event) {
-    event.preventDefault();
-    myFunction16();
-});
-saveBtn17.addEventListener("click", function (event) {
-    event.preventDefault();
-    myFunction17();
-});
-//--------------------------------------------------------
+// ---------- Set start/end time parameters for loop operation and create ARRAYS (NOTE: All arrays based on 24 hour period starting at 00:000:00 to simplify the indexing)
+var startHour = 8;
+var endHour = 18;
+var timeBlockStart = ["00:00:00", "01:00:00", "02:00:00", "03:00:00", "04:00:00", "05:00:00", "06:00:00", "07:00:00", "08:00:00", "09:00:00", "10:00:00", "11:00:00", "12:00:00", "13:00:00", "14:00:00", "15:00:00", "16:00:00", "17:00:00", "18:00:00", "19:00:00", "20:00:00", "21:00:00", "22:00:00", "23:00:00"];
+var timeBlockText = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+var keyid = ["WDS0", "WDS1", "WDS2", "WDS3", "WDS4", "WDS5", "WDS6", "WDS7", "WDS8", "WDS9", "WDS10", "WDS11", "WDS12", "WDS13", "WDS14", "WDS15", "WDS16", "WDS17", "WDS18", "WDS19", "WDS20", "WDS21", "WDS22", "WDS23"];
+var textid = ["Text0", "Text1", "Text2", "Text3", "Text4", "Text5", "Text6", "Text7", "Text8", "Text9", "Text10", "Text11", "Text12", "Text13", "Text14", "Text15", "Text16", "Text17", "Text18", "Text19", "Text20", "Text21", "Text22", "Text23"];
+// ---------- Event listener to determine when save buttons are clicked (NOTE: AN HMTL "id" SUCH AS "saveBTN" IS UNIQUE AND CAN ONLY BE USED ONCE PER HTML PAGE)
+saveBtn08.addEventListener("click", function (event) { event.preventDefault(); index = 8; saveOne(index); });
+saveBtn09.addEventListener("click", function (event) { event.preventDefault(); index = 9; saveOne(index); });
+saveBtn10.addEventListener("click", function (event) { event.preventDefault(); index = 10; saveOne(index); });
+saveBtn11.addEventListener("click", function (event) { event.preventDefault(); index = 11; saveOne(index); });
+saveBtn12.addEventListener("click", function (event) { event.preventDefault(); index = 12; saveOne(index); });
+saveBtn13.addEventListener("click", function (event) { event.preventDefault(); index = 13; saveOne(index); });
+saveBtn14.addEventListener("click", function (event) { event.preventDefault(); index = 14; saveOne(index); });
+saveBtn15.addEventListener("click", function (event) { event.preventDefault(); index = 15; saveOne(index); });
+saveBtn16.addEventListener("click", function (event) { event.preventDefault(); index = 16; saveOne(index); });
+saveBtn17.addEventListener("click", function (event) { event.preventDefault(); index = 17; saveOne(index); });
+// ---------- Function to save one element ONLY to local storage
+function saveOne(index) {
+    var i = index
+    var tempData = document.getElementById(textid[i]).value;
+    localStorage.setItem(keyid[i], JSON.stringify(tempData));
+};
+// ---------- Function to populate timeBlockText from local storage then display on HTML page textareas
+function getSchedule() {
+    for (i = startHour; i < endHour; i++) {
+        timeBlockText[i] = JSON.parse(localStorage.getItem(keyid[i]));
+        document.getElementById(textid[i]).innerHTML = timeBlockText[i];
+    };
+};
+// ---------- Function to AUTOMATICALLY update "textarea" colour based on "currentTime"
+function updateTimeBlockColour() {
+    var currentDate = moment().format('dddd, Do MMMM YYYY - ');
+    var currentTime = moment().format('HH:mm:ss');
+    $('#currentDay').text(currentDate + currentTime);
+    for (i = startHour; i < endHour; i++) {
+        if (currentTime <= timeBlockStart[i]) {
+            document.getElementById(textid[i]).setAttribute("class", "col-sm-10 future");
+        } else if (currentTime >= timeBlockStart[i] && currentTime <= timeBlockStart[i + 1]) {
+            document.getElementById(textid[i]).setAttribute("class", "col-sm-10 present");
+            if (currentTime == timeBlockStart[i]) { location.reload(); }
+        } else {
+            document.getElementById(textid[i]).setAttribute("class", "col-sm-10 past");
+        };
+    };
+};
+// ---------- RUN FUNCTIONS
+var retrieveLocalStorage = getSchedule();
+var updateTestAreaColour = setInterval(updateTimeBlockColour, 1000);
