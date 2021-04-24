@@ -31,8 +31,8 @@ To dynamically change the HTML and update CSS, the following is featured in the 
 * Moment.js for current date and current time
 * JSON
 * jQuery
-* if/else statements
-* event listeners
+* If/else statements
+* Event listeners
 
 Final URL: https://shelbyrp.github.io/Work-Day-Scheduler/
 
