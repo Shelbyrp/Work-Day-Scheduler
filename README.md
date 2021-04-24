@@ -35,3 +35,9 @@ To dynamically change the HTML and update CSS, the following is featured in the 
 * event listeners
 
 Final URL: https://shelbyrp.github.io/Work-Day-Scheduler/
+
+# License
+
+@ Shelby R Pignat
+
+Licensed under the [MIT](LICENSE) license.
