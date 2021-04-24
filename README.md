@@ -12,6 +12,10 @@ Work Day Schedule appears as:
 
 ![Work Day Scheduler](./Assets/images/Work-Day-Scheduler.png)
 
+## Deployed Link
+
+Final URL: https://shelbyrp.github.io/Work-Day-Scheduler/
+
 ## HTML
 
 Utilising the provided HTML framework, timeblocks were added to the HTML in the form of div elements. Within these elements are span elements for the hour to be displayed, text area's to allow the users to enter their work day tasks into the schedule and a save button once the user has completed entering the task.
@@ -33,8 +37,6 @@ To dynamically change the HTML and update CSS, the following is featured in the 
 * jQuery
 * If/else statements
 * Event listeners
-
-Final URL: https://shelbyrp.github.io/Work-Day-Scheduler/
 
 # License
 
