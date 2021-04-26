@@ -12,6 +12,10 @@ Work Day Schedule appears as:
 
 ![Work Day Scheduler](./Assets/images/Work-Day-Scheduler.png)
 
+Scheduler showing a different day
+
+![Work Day Scheduler](./Assets/images/Work-Day-Scheduler2.png)
+
 ## Deployed Link
 
 Final URL: https://shelbyrp.github.io/Work-Day-Scheduler/
